@@ -1,9 +1,7 @@
 pipeline:
   build:
-    image: python:latest
+    image: ninjaben/matlab-support
+    volumes:
+      -  /usr/local/MATLAB/R2018a/:/usr/local/MATLAB/from-host
     commands:
-      - ls
-
-  slack:
-    image: plugins/slack
-    secrets: [ slack_webhook ]
+      - matlab -r "version,exit;"
