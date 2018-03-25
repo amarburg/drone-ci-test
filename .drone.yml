@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: ubuntu/latest
+    image: ubuntu:latest
     commands:
       - /sbin/ifconfig
 
