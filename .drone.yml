@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: python:latest
+    image: ubuntu/latest
     commands:
       - ifconfig
 
