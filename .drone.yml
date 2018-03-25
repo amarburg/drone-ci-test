@@ -2,7 +2,7 @@ pipeline:
   build:
     image: ubuntu/latest
     commands:
-      - ifconfig
+      - /sbin/ifconfig
 
   slack:
     image: plugins/slack
