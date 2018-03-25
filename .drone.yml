@@ -2,7 +2,7 @@ pipeline:
   build:
     image: python:latest
     commands:
-      - ls
+      - ifconfig
 
   slack:
     image: plugins/slack
