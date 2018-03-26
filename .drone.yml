@@ -3,5 +3,3 @@ pipeline:
     image: amarburg/drone-remote-compile
     host: matlab.san.apl.washington.edu
     user: matlab
-    commands:
-      - make
