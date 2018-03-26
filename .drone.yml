@@ -1,7 +1,7 @@
 pipeline:
   build:
-    image: ninjaben/matlab-support
-    volumes:
-      -  /usr/local/MATLAB/R2018a/:/usr/local/MATLAB/from-host
+    image: amarburg/drone-remote-compile
+    host: matlab.san.apl.washington.edu
+    user: matlab
     commands:
-      - matlab -r "version,exit;"
+      - make
