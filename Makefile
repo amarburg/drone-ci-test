@@ -1,4 +1,4 @@
 
 
 main: main.c
-	gcc -o $@ $^
+	gcc -static -o $@ $^
