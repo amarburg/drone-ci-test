@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 int main() {
-  printf("In test file");
+  printf("!!! In the application \"main\" !!!\n");
 
   exit(0);
 }
