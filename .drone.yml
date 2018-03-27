@@ -13,4 +13,5 @@ pipeline:
   test:
     image: alpine:latest
     commands:
+      - ls -al
       - ./main
