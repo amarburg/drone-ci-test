@@ -1,7 +1,11 @@
 pipeline:
   build:
-    image: ninjaben/matlab-support
-    volumes:
-      -  /usr/local/MATLAB/R2018a/:/usr/local/MATLAB/from-host
-    commands:
-      - matlab -r "version,exit;"
+    image: amarburg/remote-compile:latest
+    hosts: matlab.san.apl.washington.edu
+    user: matlab
+    target: tempdir
+    do_sleep: 10
+    script:
+      - ls -al
+      - touch foo
+    secrets: [ ssh_privkey ]
