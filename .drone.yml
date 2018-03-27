@@ -4,7 +4,7 @@ pipeline:
     hosts: matlab.san.apl.washington.edu
     user: matlab
     target: tempdir
-    do_sleep: 10
+    exclude: .git/
     script:
       - ls -al
       - touch foo
