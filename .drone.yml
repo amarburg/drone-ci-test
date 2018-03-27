@@ -14,4 +14,4 @@ pipeline:
     image: alpine:latest
     commands:
       - ls -al
-      - main
+      - file main
