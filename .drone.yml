@@ -6,6 +6,11 @@ pipeline:
     target: tempdir
     exclude: .git/
     script:
-      - ls -al
-      - touch foo
+      - make
+      - ./main
     secrets: [ ssh_privkey ]
+
+  test:
+    image: alpine:latest
+    commands:
+      - ./main
